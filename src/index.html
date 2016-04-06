@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- page title here -->
-    <title>Setting up ES6 project</title>
+    <title>Playing around with ES6 project</title>
   </head>
   <body>
-    <main></main>
-    Hello World!
-    <script src="../jspm_packages/system.js"></script>
-    <script src="../config.js"></script>
+    <div id='app'></div>
+    <script src="jspm_packages/system.js"></script>
+    <script src="js/jspm.config.js"></script>
     <script>
-      System.import('main')
+      var prod = false;
+      System.import('js/app');
     </script>
   </body>
 </html>
