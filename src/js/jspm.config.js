@@ -287,7 +287,6 @@ System.config({
       "npm:fbjs@0.6.1/lib/toArray.js"
     ]
   },
-
   map: {
     "alt": "npm:alt@0.18.4",
     "babel": "npm:babel-core@5.8.38",
