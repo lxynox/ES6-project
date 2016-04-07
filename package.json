@@ -5,9 +5,8 @@
   "scripts": {
     "test": "mocha",
     "jspm": "jspm",
-    "build": "jspm bundle src/js/app.js src/js/app.bundle.js --inject --minify",
-    "start": "gulp webserver",
-    "live-server": "live-server --port:3004"
+    "build": "jspm bundle js/app.js src/js/app.bundle.js --inject --minify",
+    "start": "gulp webserver"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
@@ -22,7 +21,7 @@
   },
   "jspm": {
     "directories": {
-      "packages": "src/jspm_packages"
+      "baseURL": "src"
     },
     "configFile": "src/js/jspm.config.js",
     "dependencies": {
