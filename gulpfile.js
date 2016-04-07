@@ -9,6 +9,6 @@ gulp.task('webserver', function() {
       path: '/',
       port: 4003,
       fallback: 'index.html',
-      livereload: true
+      livereload: false 
     }));
 });
