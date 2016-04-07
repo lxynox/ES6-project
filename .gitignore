@@ -1,6 +1,6 @@
 node_modules
-src/jspm_packages
-**npm_debug.log
-**.swp
-**.swo
-**.DS_Store
+jspm_packages
+npm_debug.log
+.DS_Store
+*.swp
+*.swo

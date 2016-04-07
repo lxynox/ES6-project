@@ -5,7 +5,7 @@
   "scripts": {
     "test": "mocha",
     "jspm": "jspm",
-    "build": "jspm bundle js/app.js src/js/app.bundle.js --inject --minify",
+    "build": "jspm bundle js/src/app.js public/js/dist/app.bundle.js --inject --minify",
     "start": "gulp webserver"
   },
   "devDependencies": {
@@ -21,9 +21,10 @@
   },
   "jspm": {
     "directories": {
-      "baseURL": "src"
+      "baseURL": "public",
+      "packages": "public/lib/jspm_packages"
     },
-    "configFile": "src/js/jspm.config.js",
+    "configFile": "public/lib/jspm.config.js",
     "dependencies": {
       "alt": "npm:alt@^0.18.4",
       "bootstrap": "github:twbs/bootstrap@^3.3.6",

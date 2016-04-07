@@ -3,7 +3,7 @@ var webserver = require('gulp-webserver');
 
 // top to bottom task declaration
 gulp.task('webserver', function() {
-  gulp.src('src')
+  gulp.src('public')
     .pipe(webserver({
       host: '0.0.0.0',
       path: '/',
