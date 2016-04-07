@@ -10,8 +10,8 @@ System.config({
   },
   paths: {
     "src/js/*": "js/*",
-    "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
+    "github:*": "src/jspm_packages/github/*",
+    "npm:*": "src/jspm_packages/npm/*"
   },
   bundles: {
     "src/js/app.bundle.js": [
@@ -287,11 +287,14 @@ System.config({
       "npm:fbjs@0.6.1/lib/toArray.js"
     ]
   },
+
   map: {
     "alt": "npm:alt@0.18.4",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
+    "bootstrap": "github:twbs/bootstrap@3.3.6",
     "core-js": "npm:core-js@1.2.6",
+    "jquery": "npm:jquery@2.2.3",
     "lodash": "npm:lodash@4.8.2",
     "react": "npm:react@0.14.8",
     "react-dom": "npm:react-dom@0.14.8",
@@ -339,6 +342,9 @@ System.config({
     },
     "github:jspm/nodelibs-zlib@0.1.0": {
       "browserify-zlib": "npm:browserify-zlib@0.1.4"
+    },
+    "github:twbs/bootstrap@3.3.6": {
+      "jquery": "github:components/jquery@2.2.1"
     },
     "npm:alt@0.18.4": {
       "flux": "npm:flux@2.1.1",

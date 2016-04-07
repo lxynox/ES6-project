@@ -10,9 +10,13 @@
     "node": true,
     "browser": true
   },
-  "ecmaFeatures": {
-    "jsx": true,
-    "modules": true
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "parser": "babel-eslint"
   }
 }
 
