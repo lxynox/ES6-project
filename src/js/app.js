@@ -1,10 +1,10 @@
-import example from './example'
+import example from './example';
 import { _, React, ReactDOM } from './dependencies.js';
 
-class App extends React.Component {
+export class App extends React.Component {
   render() {
     let component,
-        insertElement;
+      insertElement;
 
     component = <p id="greeting">Hello World</p>;
     insertElement = document.getElementById('app');
