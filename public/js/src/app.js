@@ -1,5 +1,5 @@
 // dependencies
-import { _, React, ReactDOM } from './dependencies.js';
+import { _, React, ReactDOM, Router, Route, hashHistory } from './dependencies.js';
 // views
 import { SideNavbar } from './views/components/SideNavbar';
 import { Content } from './views/components/Content';
@@ -29,7 +29,13 @@ export class App extends React.Component {
   }
 };
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
+ReactDOM.render((
+  <Router history={hashHistory}>
+    <Route path='/' component={App}>
+      <Route path='/top' component={TopNavbar} />
+      <Route path='/main' component={SideNavbar} />
+      <Route path='/foot' component={Footer} />
+    </Route>
+  </Router> 
+  ), document.getElementById('app')
 );
