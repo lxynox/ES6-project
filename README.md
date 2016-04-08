@@ -19,10 +19,12 @@ $ npm run start
 ```
 
 ## TODO
+- [ ] add React routing for more elegant Url mapping
 - [ ] setup linting as build task
 - [ ] use Alt/Flux as the project architecture
 - [ ] setup karma, mocha for the test environment
-- [ ] use React, jQuery etc
+- [ ] consider 'webpack' as the single bundling/building tool instead of 'jspm+gulp'
+- [x] use React, jQuery etc
 
 ## Current Status
 | Working on features | Description | Commit history |

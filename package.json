@@ -5,8 +5,10 @@
   "scripts": {
     "test": "mocha",
     "jspm": "jspm",
-    "build": "jspm bundle js/src/app.js public/js/dist/app.bundle.js --inject --minify",
-    "start": "gulp webserver"
+    "build": "jspm bundle js/src/app public/js/dist/app.bundle.js --inject --minify",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:dev": "jspm unbundle && gulp webserver",
+    "start:prod": "npm run build && gulp webserver"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
@@ -16,6 +18,7 @@
     "eslint": "^2.7.0",
     "gulp": "^3.9.1",
     "gulp-webserver": "^0.9.1",
+    "if-env": "^1.0.0",
     "jspm": "^0.16.32",
     "live-server": "^0.9.2"
   },

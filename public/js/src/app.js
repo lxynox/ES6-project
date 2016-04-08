@@ -1,4 +1,4 @@
-import { _, React, ReactDOM } from './dependencies.js';
+import { _, React } from './dependencies.js';
 
 export class App extends React.Component {
   render() {
@@ -53,7 +53,7 @@ export class App extends React.Component {
   }
 };
 
-ReactDOM.render(
+React.render(
   <App />,
   document.getElementById('app')
 );
