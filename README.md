@@ -2,7 +2,6 @@
 Setup new project using ES6 features. Babel + jspm/npm + node + gulp + grunt + karma + mocha(test)
 
 ## Technology Stack
-- **babel**: ES6 transpiler(deragde es6 to es5)
 - **jspm**: Application package manager(install packages for app's runtime)
 - **npm**: Development package manager(install packages for dev's use, mainly testing, scaffolding and task scheduling) 
 - **systemJS**: Global module loader for the browser stack and application bundler
@@ -19,6 +18,7 @@ $ npm run start
 ```
 
 ## TODO
+- [ ] **refactoring snapshots histories**
 - [ ] add React routing for more elegant Url mapping
 - [ ] setup linting as build task
 - [ ] use Alt/Flux as the project architecture

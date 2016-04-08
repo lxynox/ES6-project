@@ -1,5 +1,5 @@
 // dependencies
-import { _, React, ReactDOM } from './dependencies.js';
+import { React } from './dependencies.js';
 // views
 import { SideNavbar } from './views/components/SideNavbar';
 import { Content } from './views/components/Content';
@@ -28,8 +28,3 @@ export class App extends React.Component {
     return component;
   }
 };
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-);
